@@ -17,7 +17,7 @@ Commande :
 adb devices
 Resultat :
 
-text
+
 192.168.56.102:5555     device
 ```
 
@@ -30,7 +30,7 @@ bash
 adb root
 Resultat :
 
-text
+
 adbd is already running as root
 ``` 
 <img width="667" height="76" alt="image" src="https://github.com/user-attachments/assets/d4ed29e0-7ad5-45fa-bb78-6b3b64ab7efd" />
@@ -42,7 +42,7 @@ bash
 adb remount
 Resultat :
 
-text
+
 remount succeeded
 ```
 <img width="616" height="122" alt="image" src="https://github.com/user-attachments/assets/a2770bf8-e921-4cd4-b66c-676083bf35ec" />
@@ -54,7 +54,7 @@ bash
 adb shell id
 Resultat :
 
-text
+
 uid=0(root) gid=0(root) groups=0(root),...
 Interpretation : uid=0(root) confirme les privilèges administrateur.
 ```
@@ -67,7 +67,7 @@ bash
 adb shell "su -c id"
 Resultat :
 
-text
+
 uid=0(root) gid=0(root) groups=0(root)...
 ```
 
@@ -80,7 +80,7 @@ bash
 adb shell getprop ro.build.version.release
 Resultat :
 
-text
+
 11
 ```
 <img width="845" height="107" alt="image" src="https://github.com/user-attachments/assets/34e76208-0ffd-4aad-aff0-7039f633cc53" />
@@ -107,7 +107,7 @@ bash
 adb install F-Droid.apk
 Resultat :
 
-text
+
 Success
 ```
 <img width="866" height="138" alt="image" src="https://github.com/user-attachments/assets/479b831d-b9d5-464a-b86c-7421dc47acd9" />
@@ -119,7 +119,7 @@ bash
 adb shell cmd package resolve-activity --brief org.fdroid.fdroid
 Resultat :
 
-text
+
 org.fdroid.fdroid/.views.main.MainActivity
 ```
 <img width="1103" height="93" alt="image" src="https://github.com/user-attachments/assets/6c56a352-0f4e-4130-aec7-1643429d7495" />
@@ -328,6 +328,3 @@ adb emu avd wipe-data                            # Wipe de l'AVD
 ## Auteur
 **H-oubane**
 
-End of walkthrough
-
-text
